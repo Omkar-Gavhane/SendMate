@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMvE3sD6g4wCfov7aB7F7/9C4hSt4I+8G3lXX" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <nav style="background-color: #A6C1FA;" class="shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-2 px-6">
+            <a href="/" class="home-logo text-2xl font-bold"><img src="/images/sendmate-logo.png" class="logo-img-nav"
+                    alt="">Sendmate</a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="text-blue-600 md:hidden" id="mobile-menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+
+            <!-- Menu Links -->
+            <ul class="hidden md:flex space-x-6 text-blue-700 font-semibold" id="navbar-links">
+                <li><a href="/" class="secondary-color">Home</a></li>
+                <li>
+                    <div class="relative inline-block text-left">
+                        <a href="#" class="secondary-color flex items-center justify-center " id="helpDropdownToggle">
+                            <img src="/images/question-solid.svg" class="user-icon b-rounded-1" alt="Help Icon">
+                        </a>
+
+                        <!-- Dropdown Menu -->
+                        <div id="helpDropdownMenu"
+                            class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50 dropdownMenu">
+                            <ul class="py-1 text-gray-700">
+                                <li>
+                                    <a href="/information" class="block px-4 py-2 hover:bg-gray-100">How-it-works</a>
+                                </li>
+                                <li>
+                                    <a href="/contact" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="relative inline-block text-left">
+                        <a href="#" class="secondary-color flex items-center justify-center " id="dropdownToggle">
+                            <img src="/images/user-solid.svg" class="user-icon b-rounded-1" alt="User Icon">
+                        </a>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdownMenu"
+                            class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-50 dropdownMenu">
+                            <ul class="py-1 text-gray-700">
+                                <li>
+                                    <a href="/dashboard" class="block px-4 py-2 hover:bg-gray-100">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="/logout" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </li>
+
+
+            </ul>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <ul class="flex-col space-y-4 mt-4 hidden md:hidden" id="mobile-dropdown">
+            <li><a href="/" class="text-blue-700 font-semibold block text-center hover:text-blue-600">Home</a></li>
+            <li><a href="/information" class="secondary-color">How it works</a></li>
+            <li><a href="/dashboard"
+                    class="text-blue-700 font-semibold block text-center hover:text-blue-600">Profile</a>
+            </li>
+            <li><a href="/logout" class="text-blue-700 font-semibold block text-center hover:text-blue-600">Logout</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <script src="/javascript/script.js"></script>
+
+</body>
+
+</html>
